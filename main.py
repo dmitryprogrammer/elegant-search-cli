@@ -1,7 +1,8 @@
 import sys
 
 def main():
-    arguments = sys.argv[1:]
-    print(len(arguments))
+    filename = sys.argv[1]
+    search = sys.argv[2:]
+    print(filename, search)
 
 main()

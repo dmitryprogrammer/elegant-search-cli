@@ -1,0 +1,16 @@
+[project]
+name = "ElegantSearch"
+version = "0.1.0"
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+watchdog = { version = "^4.0.0", extras = ["watchmedo"] }
+
+[tool.poetry.group.dev.dependencies]
+
+[tool.poetry.scripts]
+start = "main:main"
+watch = "watchmedo auto-restart --patterns=*.py --recursive -- python ./main.py"

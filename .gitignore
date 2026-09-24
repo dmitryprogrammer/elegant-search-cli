@@ -162,4 +162,4 @@ Thumbs.db
 *~
 
 # Custom files
-./data
+data/*

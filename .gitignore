@@ -160,3 +160,6 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Custom files
+./data

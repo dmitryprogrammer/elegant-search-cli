@@ -3,11 +3,10 @@ import sys
 BASE_PATH = "./data"
 
 def getFileName():
+    if(len(sys.argv) <= 1):
+       return None 
+
     fileName = sys.argv[1]
-    
-    if(not fileName):
-       print("Please enter the filename")
-       return
 
     return BASE_PATH + "/" + fileName
 

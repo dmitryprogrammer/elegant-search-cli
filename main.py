@@ -6,6 +6,7 @@ searchString = len(sys.argv) > 2 and sys.argv[2] or None
 
 if not fileName:
     fileName = input("Please enter filename: ")
+    searchString = input("Please enter what you want to find: ")
 
 with open(fileName, "r") as f:
     f.seek(0)

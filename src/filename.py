@@ -3,12 +3,12 @@ import sys
 BASE_PATH = "./data"
 
 def getFileName(inputFileName=None):
-    if not inputFileName and len(sys.argv) <= 1:
-        return None 
-    elif not inputFileName:
+    if inputFileName:
+        fileName = inputFileName
+    elif len(sys.argv) > 1:
         fileName = sys.argv[1]
     else:
-        fileName = inputFileName
+        return None
 
     return BASE_PATH + "/" + fileName
 
